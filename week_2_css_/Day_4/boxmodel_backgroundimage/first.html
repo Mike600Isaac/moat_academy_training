@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Boxmodel module 2</title>
+		<meta name="description" content="learning more details on box model">
+		<meta name="author" content="Micheal Isaac">
+		
+		<style type="text/css">
+			
+			
+			.row-1 {
+				display:flex;
+				justify-content: space-between;
+				padding: 20px;
+			}
+			.box {
+				width:45%;
+			}
+			h1 {
+				border-width: 10px;
+				border-style:solid;
+				border-color:green;
+				border-radius: 10px 20px 30px 40px;;
+			}
+			.mybox {
+				height:200px;
+				width:200px;
+				border-top: 2px solid red; /* border to the top*/
+				border-bottom: 2px dotted green;
+				border-left: 2px outset purple;
+				border-right: 2px inset orange;
+				border-radius: 2px 20px 50px 100px;
+			}
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<div class="main-container">
+		
+			<div class="row-1">
+				<div class="box box-1">
+					<h1>Hellow world. Greetings from mars</h1>
+				</div>
+				<div class="box box-2"></div>
+			</div>
+			
+		</div>
+		
+		<div class="mybox"></div>
+	</body>
+
+</html>

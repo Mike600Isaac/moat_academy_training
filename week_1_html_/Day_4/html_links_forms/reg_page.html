@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register Form</title>
+	</head>
+	<body style="background-color: lightgray;">
+		<div style="background: white; padding:20px">
+			<h1>Registeration Form</h1>
+			<form action="" method="post">
+				<div>
+					<label for="surname">Username</label><br>
+					<input type="text" name="username" id="surname" placeholder="Enter surname">
+				</div>
+				<div>
+					<label for="fname">Firstname</label> <br>
+					<input type="text" name="firstname" id="fname" placeholder="Enter firstname" required>
+				</div>
+				<div>
+					<label for="mail">Email</label> <br>
+					<input type="url" name="email" id="mail" placeholder="Enter email" required>
+				</div>
+				<div>
+					<label for="pass">Password</label> <br>
+					<input type="password" name="password" id="pass" placeholder="Enter valid password" required>
+				</div>
+				<div>
+					<label>Select Gender</label> <br>
+					<input type="radio" name="gender" value="male"> Male <br>
+					<input type="radio" name="gender" value="female">Female <br>
+					<input type="radio" name="gender" value="non">Non
+				</div>
+				<div>
+					<label>Skills</label> <br>
+					<input type="checkbox" name="skill1" value="male"> Male <br>
+					<input type="checkbox" name="skill2" value="css">CSS <br>
+					<input type="checkbox" name="skill3" value="javascript">Javascript
+				</div>
+				<div>
+					<label>Bio</label><br>
+					<textarea cols="30" rows="10"></textarea>
+				</div><br>
+				<div>
+					<select name="State of Origin">
+						<option>Select your state</option>
+						<option>Lagos state</option>
+						<option>Kano</option>
+						<option>Delta state</option>
+					</select>
+				</div>
+				<div>
+					<label for="image">Profile pics</label><br>
+					<input type="file" name="pics" id="image">
+				</div>
+				<div>
+					<label for="color">Select color</label><br>
+					<input type="color" name="colors" id="color">
+				</div><br><br>
+				<button type="submit">Register</button>		
+			</form>
+		</div>
+	</body>
+
+</html>

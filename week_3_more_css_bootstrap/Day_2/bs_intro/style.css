@@ -1,0 +1,37 @@
+body {
+	background-color: brown;
+}
+
+h1 {
+	border: green 2px solid;
+	color: white;
+	padding: 10px;
+}
+
+h1 + p {
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 900
+}
+
+.section > p {
+	padding: 10px;
+	color: red;
+	border: 2px solid purple;
+}
+.section h2 {
+	
+}
+.parent {
+	height: 200px;
+	border: 2px solid green;
+}
+.child {
+	height: inherit;
+	border: 2px solid green;
+}
+
+h2 {
+	background-color: yellow !important;
+	color: white !important;
+}

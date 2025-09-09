@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="decription" content="Other Things About Functions">
+	<meta name="author" content="Micheal Isaac">
+	<meta name="robots" content="index, follow">
+
+	<title>JS Function Part 2</title>
+</head>
+<body>
+	<h1 id="result"></h1>
+
+	<form>
+		<!-- <button type="button" onclick="calculateAge(1996)">Get Age</button> -->
+	</form>
+
+
+	
+	<script type="text/javascript">
+
+		// Static
+		// function sayGreeting() {
+		// 	var greet = "Hello";
+		// 	alert(greet);
+
+		// }
+
+		// sayGreeting();
+		// sayGreeting();
+		// sayGreeting();
+
+		// // Dynamic Function
+		// function sayGreeting(greet) {
+		// 	alert(greet);
+
+		// }
+
+		// sayGreeting("Hi");
+		// sayGreeting("Good Day");
+
+		// parameters can be assigned or stored in a local variable
+		// function sayGreeting(greet, person) {
+		// 	var greetValue = greet;
+		// 	alert(greetValue + ' ' + person);
+
+		// }
+
+		// // Recieving our variable from other source rather than hard coding it
+		// var userName = prompt("What is your first Name?");
+		// var greeting = prompt("Enter your  desired greeting");
+
+		// sayGreeting(greeting, userName);
+		// // sayGreeting("Good Day");
+
+
+		// Exercise 1
+		function calculaAge(birthYear) {
+			var userAge = 2025 - parseInt(birthYear);
+			alert("Your age will be " + userAge + " this year")
+		}
+		// var birthYear = prompt("Enter birth year")
+		// calculaAge(birthYear);
+
+		// Exercise 2
+		// function numType(num) {
+		// 	if(num % 2 === 0) {
+		// 		alert(num + " It is an Even Number")
+		// 	} else {
+		// 		alert(num + " It is an Odd Number")
+		// 	}
+		// }
+
+		// var userInput = prompt("Enter Number");
+		// numType(userInput);
+
+		// Exercise 3
+		// function genderClass(age, gender) {
+		// 	if ((age >= 65 && gender == "woman") || (age >= 70 && gender == "man")) {
+		// 		alert("You are allowed in the special area!");
+		// 	} else {
+		// 		alert("You are not allowed in the special area!");
+		// 	}
+		// }
+
+		// var age = prompt("Enter Age:");
+		// var gender = prompt ("Enter gender");
+
+		// genderClass(age, gender);
+
+		function feedBack(score=51) {
+			if(Number(score) > 50) {
+				alert("You passed :)");
+			} else {
+				alert("You Failed :(");
+			}
+		}
+		// feedBack(40);
+
+		// passing default value; these are value that are assign value as soon as they are created
+		// function greetUser(greet='Hi', user='Guest') {
+		// 	alert(greet + ", " + user);
+		// }
+
+		// greetUser();
+		// greetUser("Hey");
+		// greetUser('Hello', 'Emma');
+
+
+		// alert(), prompt() and confirm() are all argument which takes in arguments
+
+			// Exercise 4
+			function multiply(num1, num2) {
+				var multiplyValue = Number(num1) + Number(num2);
+				// alert(multiplyValue);
+				// document.getElementById('result').innerText = 'Result is ' + multiplyValue;
+			}
+			// var num1 = prompt('Enter number 1 value');
+			// var num2 = prompt('Enter number 2 value');
+
+		// multiply(num1, num2);
+
+
+		// Return Statements in JS functions
+				function multiply(num1, num2) {
+				var multiplyValue = Number(num1) + Number(num2);
+				// alert(multiplyValue);
+
+				return multiplyValue;
+			}
+			// var num1 = prompt('Enter number 1 value');
+			// var num2 = prompt('Enter number 2 value');
+
+		// alert(multiply(num1, num2));
+
+			// without return statement;
+			function greetUser(user){
+					user;
+			}
+
+			// alert(greetUser('John')); // value will be undefined cause it's not returning the value outside the function;
+
+			// with return statement;
+			function greetUser(user){
+					return user;
+			}
+
+			alert(greetUser('John')); // It's going to return value for us as the value as been returned out of our function and can be used for anything outside of the function. We should also note that any code after the return statement in the function will not be executed
+
+
+
+
+	</script>
+</body>
+</html>

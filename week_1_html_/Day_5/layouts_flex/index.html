@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Flex </title>
+	</head>
+	<body>
+		<div>
+		
+			<!-- row one -->
+			<div style="height:300px; border: 2px solid red; display: flex; justify-content: center; align-items: center;">
+			
+				<div style="height:200px; border: 2px solid orange; width:45%;"></div>
+				<div style="height:200px; border: 2px solid purple; width:45%;"></div>
+				
+			</div>
+			<!-- row two -->
+			<div style="min-height:300px; border: 2px solid tomato; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+			
+				<div style="height:200px; border: 2px solid yellow; width:45%;"></div>
+				<div style="height:200px; border: 2px solid green; width:45%;"></div>
+				<div style="height:200px; border: 2px solid blue; width:45%;"></div>
+				<div style="height:200px; border: 2px solid black; width:45%;"></div>
+				
+			</div>
+			
+			<!-- row three-->
+			<div style="height:300px; border: 2px solid tomato; display: flex;">
+			
+				<div style="height:200px; border: 2px solid yellow; width:20%; flex-grow: 0;"></div>
+				<div style="height:200px; border: 2px solid yellow; width:20%; flex-grow: 1; align-self: center;"></div>
+				<div style="height:200px; border: 2px solid yellow; width:20%; flex-grow: 1;"></div>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+.showoff {
+	
+	/*  background-color: #160839;
+	background-image: url('images/child_6.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;*/
+	background: #160839 url('images/child_6.jpg') no-repeat center fixed;
+	background-size: cover;
+	color: #fff; /* shorthand for all properties above*/
+	
+}
+
+.overlay {
+	min-height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255,255,255,0.6);
+	padding: 0 10%;
+}
+h1 {
+	text-align: center;
+	color: #160899;
+}

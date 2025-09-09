@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style>
+		body {
+			background-color: orange;
+		}
+	</style>
+</head>
+<body id='bodyElement'>
+
+	<button type="button" onclick="
+
+	var newBackground = prompt('Enter color of choice');
+		// var choice = document.getElementById('bodyElement').style.backgroundColor = newBackground;
+
+		if (newBackground == '') {
+			alert('You did not supply any color');
+			document.getElementById('bodyElement').style.backgroundColor = 'pink';
+		} else { 
+			document.getElementById('bodyElement').style.backgroundColor = newBackground;
+		}
+		">Choice Color</button>
+
+
+	<script>
+		
+
+		// score 70 - 100 Excellent; 50 - 69 Very Good; 30 - 49 Good; Below 30 Poor;
+
+		// var score = prompt('what is your score?')
+		// if(score >= 70) {
+		// 	alert("Excellent!")
+		// } else if(score >= 70) {
+		// 	alert("Excellent!")
+		// } else if(score >= 70) {
+		// 	alert("Excellent!")
+		// }
+
+		var firstName = prompt("Enter your firstname");
+
+		if (firstName == 'John') {
+			alert("You are a Johnny Man");
+		} else if (firstName == 'Sally') {
+			alert('Are you a salmon Fish');
+		} else if (firstName == 'Mark') {
+			alert("You love maker");
+		} else {
+			alert("We do not have anything for you");
+		}
+	</script>
+</body>
+</html>

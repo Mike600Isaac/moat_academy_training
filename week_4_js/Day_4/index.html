@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Using Function in Javascript</title>
+
+</head>
+
+
+
+<body>
+
+
+	<script>
+		
+		// var gender = prompt("What is your gender");
+
+
+		// switch(gender) {
+		// 	case 'female':
+		// 		alert('We have shoes for sale');
+		// 		break;
+		// 	case 'male': 
+		// 	case 'boy':
+		// 		alert('We have phones for sale');
+		// 		break;
+		// 	default:
+		// 		alert('No product found');
+		// }
+
+
+		// Nested Functions
+
+		function registration() {
+			var bvn = prompt("supply your BVN");
+
+			function verify_bvn() {
+				// This make contain several lines of code
+				document.write("<h1>" + bvn + " is valid</h1>");
+			}
+
+			function verify_credit_status() {
+				// Maybe send a mail to CBN;
+				alert("Message send")
+			}
+
+			verify_bvn();
+			verify_credit_status();
+		}
+
+		registration();
+
+	</script>
+</body>
+</html>

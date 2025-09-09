@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text Placing Elements</title>
+</head>
+
+<body>
+	
+	
+
+	<h1 id="header1"> This is a <span>header one tag</span></h1>
+	<p id="para1">I am just a <strong>paragraph tag</strong></p>
+
+	<button onclick="
+	var con = document.getElementById('header1').innerHTML;
+	alert(con);
+
+	">Read innerHTML</button>
+	<button onclick="
+	var con = document.getElementById('header1').innerText;
+	alert(con);
+
+	">Read innerTEXT</button>
+
+	<textarea id="name"></textarea>
+	<a href="#"></a>
+	<p id='res'></p>
+	<button onclick="
+
+		var textContent = document.getElementById('name').value;
+		document.getElementById('res').innerText= textContent;
+		document.getElementById('name').value= '';
+	">Click TextArea</button>
+
+	<img id="myimg" src="banner_1.jpg" alt="banner" height="400" width="500" onmouseover ="
+		// changing the value of an attribute;
+		document.getElementById('myimg').src='banner.avif';
+	">
+	<button onclick="
+
+		var height = document.getElementById('myimg').height;
+		var width = document.getElementById('myimg').width;
+		alert(width + ' X ' + height);
+	">Read Dimension</button>
+
+<!-- // When changing the value of an element, there's not need to create a variable -->
+
+	<button onclick="
+		// changing the value of an attribute;
+		document.getElementById('myimg').src='banner.avif';
+	">Change Image</button>
+	<!-- // used when event is not involved; -->
+	<script type='text/javascript'>
+		
+	</script>
+</body>
+</html>

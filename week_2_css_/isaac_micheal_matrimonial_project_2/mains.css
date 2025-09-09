@@ -1,0 +1,98 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+body {
+	color: #FEFEFE;
+	font-family: "Calibri Light", san-seriff;
+}
+.container {
+	background-image: url("images/banner.jpg");
+	height: 100vh;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10%;
+}
+.brand_id a {
+	display: flex;
+	min-height: 10px;
+	align-items: center;
+	text-decoration: none;
+	color: #FEFEFE;
+}
+.brand_id a img{
+	width: 40px;
+}
+.brand-name {
+	padding-left: 5px;
+	font-size: 1.6em;
+	font-weight: 900;
+	
+}
+/* bug */
+ul.navbar {
+	list-style-type: none;
+}
+ul.navbar li {
+	display: inline-block;
+}
+ul.navbar li a {
+	text-decoration: none;
+	color: red;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #FEFEFE;
+	font-weight: 900;
+}
+.hero-section {
+	padding: 3% 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 150px;
+}
+.hero-right {
+	background-color: #FEFEFE;
+	color: #160F0A;
+	padding: 50px;
+}
+.hero-right h3 {
+ color: #160F0A;
+text-align: center; 
+}
+input[type="button"] {
+	color: #FEFEFE;
+	background-color: #FB4F7F;
+	border-color: none;
+	width: 225px;
+	font-weight: 900;
+}
+.select {
+	width: 225px;
+}	
+ color: #160F0A;
+ }
+.hero-left {
+	text-align: left;
+}
+.hero-left p {
+	margin: 15px 0; 
+}
+.hero-left button {
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	color: #FEFEFE;
+}
+
+form input, select {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	width: 200px;
+}

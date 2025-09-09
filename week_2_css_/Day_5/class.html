@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Positioning: Classwork</title>
+		<meta name="description" content="positioning classwork">
+		<meta name="author" content="Micheal Isaac">
+		
+		<link href="main.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css">
+			body {
+				height: 1255px;
+				font-family: ariel, sanserif;
+			}
+			
+			img {
+				height: 40px;
+				width: 40px;
+			}
+			.icons {
+				width: 60px;
+			
+				position: fixed;
+				right: 10px;
+				bottom: 90px;
+			}
+			.footer {
+				height: 400px;
+				background-color: #ffa737;
+			}
+			.contents {
+				height: 600px;
+				background-color: #7e5920;
+			}
+			.menu {
+				padding: 0px 5%;
+				background-color: #45462a;
+				padding: 5px 0;
+				position: fixed;
+				width: 100%;
+				top: 0;
+			}
+			ul {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			ul li {
+				list-style-type: none;
+			}
+			ul li a {
+				text-decoration: none;
+				color: white;
+			}
+			ul li a:hover {
+				color: #7e5920;
+			}
+		</style>
+		
+		
+	</head>
+	
+	<body>
+	
+		<div class="menu">
+		
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+			</ul>
+		</div>
+		<div class="contents">
+			<h1>Welcome Home!</h1>
+			<p>Some texts here and there</p>
+		</div>
+		<div class="footer"></div>
+			
+		<div class="icons">
+			<a href="#"> <img src="social/facebook.png" alt="facebook icon"></a>
+			<a href="#"> <img src="social/instagram.png" alt="facebook icon"></a>
+			<a href="#"> <img src="social/tiktok.png" alt="facebook icon"></a>
+			<a href="#"> <img src="social/twitter.png" alt="facebook icon"></a>
+			<a href="#"> <img src="social/youtube.png" alt="facebook icon"></a>
+		</div>
+		
+	</body>
+
+</html>

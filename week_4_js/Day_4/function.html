@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<title>Using Function in Javascript</title>
+
+</head>
+
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<h1>Function in Programming</h1>
+				<button href="index.html" class="btn btn-danger btn-lg" onclick="
+
+				scamAlert();
+				">Contact Customer Center</button>
+			</div>
+			<div class="col-2 my-4">
+				<img src="img_9.jpg" alt="" class="img-fluid" onclick="
+
+				recommender();
+				">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// Code smells
+		
+		// Created a function
+		function scamAlert() {
+			var info = "GTB will never ask you for your username and password";
+			var formated = info.toLowerCase();
+			alert(formated);
+		}
+
+		// Calling a function
+		// scamAlert();
+
+		// ==========Gender Check Function========
+		function recommender() {
+
+			var gender = prompt("What is your gender");
+
+
+			switch(gender) {
+				case 'female':
+					alert('We have shoes for sale');
+					break;
+				case 'male': 
+				case 'boy':
+					alert('We have phones for sale');
+					break;
+				default:
+					alert('No product found');
+				}
+		}
+
+		recommender();
+	</script>
+</body>
+</html>
