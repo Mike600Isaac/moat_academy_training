@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <span>Subject</span>
+            <span>Score</span>
+        </div>
+        <div>
+            <span>English</span>
+            <input type="text"></input type="text">
+        </div>
+        <div>
+            <span>Maths</span>
+            <input type="text"></input type="text">
+        </div>
+        <div>
+            <span>Chemistry</span>
+            <input type="text"></input type="text">
+        </div>
+        <div>
+            <span>Biology</span>
+            <input type="text"></input type="text">
+        </div>
+        <div>
+            <span>French</span>
+            <input type="text"></input type="text">
+        </div>
+        <div>
+            <button type="button" onclick="
+                
+                calculateGrade();
+                ">English</button>
+        </div>
+        <div>
+            <span>Total</span>
+            <b id="display"></b>
+        </div>
+    </div>
+
+    <script>
+        
+        function calculateGrade() {
+            var  inputTags = document.getElementsByTagName('input');
+            // for(let x=0; x<inputTags.length; x++) {
+            //     Number(inputTags[x].value)
+            // }
+            var total = Number(inputTags[0].value) + Number(inputTags[1].value) + Number(inputTags[2].value) + Number(inputTags[3].value) + Number(inputTags[4].value);
+            var display = document.getElementsByTagName('b')[0];
+            display.innerText = total;
+
+        }
+
+    </script>
+</body>
+</html>

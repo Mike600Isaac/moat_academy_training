@@ -6,8 +6,58 @@
 </head>
 <body>
   
-    
+    <h1>Working with Arrays</h1>
+    <h2>Learning JS Array</h2>
+    <h3>Blog Categories</h3>
+    <p class="para">Science</p>
+    <p>Technology</p>
+    <p>Health</p>
+    <p class="para">Finance</p>
+
+
+    <h1 class="emphasis">i am header tag</h1>
+    <h2 class="emphasis">i am header tag</h2>
+    <h3 class="emphasis">i am header tag</h3>
+    <p class="emphasis">I am using paragraph tags</p>
+     <p class="emphasis">Block Tag</p>
+
     <script>
+
+        // DOM get Elements
+
+        //2. document.getElementsByTagName
+        var p = document.getElementsByTagName('p'); // This returns an HTMlCollection // This can not be styled collectively
+
+        // styling the individual collection
+        // var p = document.getElementsByTagName('p').style.color = 'red'; // This will not work
+        // console.log(p[2]); // used to get the p tag in the position
+        // p[2].style.color = 'red'; //  They can only be style using the index locations
+
+        // Styling the collection is to use a LOOP
+        // for(var y= 0; y < p.length; y++) {
+        //     p[y].style.border = ' 2px solid purple';
+        // }
+
+        //3.  Using document.getElementsByClassName()
+        var newP = document.getElementsByClassName('para');
+        // newP[1].style.backgroundColor = 'yellow'; // used for an individual element
+
+        // for(var b=0; b < newP.length; b++){
+            
+        // }
+
+        // Quiz
+        // var emphasis = document.getElementsByClassName('emphasis');
+
+        // for(var x=0; x<emphasis.length; x++) {
+        //     emphasis[x].style.textDecoration = 'underline';
+        // }
+
+
+        
+
+
+
         // for(var x =1; x <= 4; x++) {
         //     // document.write(x + '<br>');
         //     for(var y=1; y<=3; y++){
@@ -74,9 +124,55 @@
 // document.write(cars);
 
 // .push()
-document.write(cars + '<br>')
-cars.push('Hyundai', 'Infinity', 'Nissian');
-document.write(cars);
+// document.write(cars + '<br>')
+// cars.push('Hyundai', 'Infinity', 'Nissian');
+// document.write(cars);
+
+// .isArray()
+var item = 'Geely';
+// document.write(Array.isArray(item) + '<br>');
+// document.write(Array.isArray(cars));
+
+// Note: strings can use index and square brackets to obtain individual characters in a string
+// alert(item[4]);
+
+
+// Examples
+
+// Method 1
+// var fruit1 = prompt('Enter fruit of choice');
+// var fruit2 = prompt('Enter fruit of choice');
+// var fruit3 = prompt('Enter fruit of choice');
+
+// var fruits = [fruit1, fruit2, fruit3];
+//         document.write(fruits.sort());
+// alert(fruits.sort());
+
+
+
+// Method 2
+// var fruits = [];
+// for(let i =1; i <=5; i++) {
+//     var fruit = prompt('Enter fruit of choice');
+//     fruits.push(fruit);  
+// }
+// document.write(fruits.sort());
+
+// Exercise
+// var elements = [1, 2, 3, 4, 5];
+
+// var iteration = 0;
+// while(iteration < 5) {
+//     if(iteration == 2){
+//          iteration++;
+//         continue;
+//     }
+//     document.write(elements[iteration]);
+//     iteration++;
+// }
+
+
+
     </script>
 </body>
 </html>
